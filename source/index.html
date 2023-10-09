@@ -65,11 +65,9 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">Отличный кофе без кофеина уже сварен.</h1>
-      <section class="hero-slider section slider-pagination">
+      <section class="hero-slider section ">
+        <div class="slider-pagination">
         <h2 class="hero-slider__title">Декаф Флэт Уайт</h2>
-        <button class="main-nav__toggle slider-button-prev" type="button">
-          <span class="visually-hidden">Предыдущий товар</span>
-        </button>
         <p class="hero-slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
         <picture>
           <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop-2x.webp 2x" width="552" height="499">
@@ -77,12 +75,18 @@
           <source type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile-2x.webp 2x" width="280" height="270">
           <source media="(min-width: 1440px)" srcset="img/promo-desktop.png 1x, img/promo-desktop-2x.png 2x" width="552" height="499">
           <source media="(min-width: 768px)" srcset="img/promo-tablet.png 1x, img/promo-tablet-2x.png 2x" width="709" height="609"> -->
-        <img class="hero-slider__image" src="images/promo-mobile.png" width="280" height="270" srcset="img/promo-mobile-2x.png 2x" alt="Кофе номер 1.">
+        <img class="hero-slider__image" src="images/slider-1-mobile.png" width="280" height="270" srcset="images/slider-1-2x-mobile.png 2x" alt="Кофе номер 1.">
+        <img class="hero-slider__image" src="images/slider-2-mobile.png" width="280" height="270" srcset="images/slider-2-2x-mobile.png 2x" alt="Кофе номер 2.">
+        <img class="hero-slider__image" src="images/slider-3-mobile.png" width="280" height="270" srcset="images/slider-3-2x-mobile.png 2x" alt="Кофе номер 3.">
         </picture>
-        <button class="main-nav__toggle slider-button-next" type="button">
-          <span class="visually-hidden">Следующий товар</span>
-        </button>
-        <a class="hero-slider__link button" href="form.html">Заказать</a>
+        <div class="hero-slider__container">
+          <s class="hero-slider__old-price">295₽</s>
+          <p class="hero-slider__price">225₽</p>
+          <a class="hero-slider__link button" href="form.html">Заказать</a>
+        </div>
+      </div>
+        <button class="hero-slider__button slider-button-prev" aria-label="Посмотреть предыдущий слайд" type="button">&lt;</button>
+        <button class="hero-slider__button slider-button-next" aria-label="Посмотреть следующий слайд" type="button">&gt</button>
       </section>
       <section class="features section">
         <p class="features__text">Преимущества</p>
