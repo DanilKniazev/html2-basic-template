@@ -1,1 +1,22 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+}
