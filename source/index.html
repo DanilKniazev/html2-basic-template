@@ -17,10 +17,16 @@
           alt="Drink2Go.">
       </picture>
       </a>
-      <nav class="main-nav main-nav--nojs">
-        <a class="">Личный кабинет</a>
-        <a class="">Корзина</a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav">
+        <a class="main-nav__link">
+          <span class="visually-hidden">Личный кабинет</span>
+        </a>
+        <a class="main-nav__link">
+          <span class="visually-hidden">Корзина</span>
+        </a>
+        <button class="main-nav__toggle js-toggle-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--current site-list__link--index">Главная</a>
@@ -41,8 +47,11 @@
     <main class="main-container">
       <h1 class="visually-hidden">Отличный кофе без кофеина уже сварен.</h1>
       <section class="hero section">
-        <div class="hero-slider">
+        <div class="hero-slider slider-pagination">
         <h2 class="hero-slider__title">Декаф Флэт Уайт</h2>
+        <button class="main-nav__toggle slider-button-prev" type="button">
+          <span class="visually-hidden">Предыдущий товар</span>
+        </button>
         <p class="hero-slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
         <picture>
           <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop-2x.webp 2x" width="552" height="499">
@@ -52,6 +61,9 @@
           <source media="(min-width: 768px)" srcset="img/promo-tablet.png 1x, img/promo-tablet-2x.png 2x" width="709" height="609"> -->
         <img class="hero-slider__image" src="images/promo-mobile.png" width="280" height="270" srcset="img/promo-mobile-2x.png 2x" alt="Кофе номер 1.">
         </picture>
+        <button class="main-nav__toggle slider-button-next" type="button">
+          <span class="visually-hidden">Следующий товар</span>
+        </button>
         <a class="hero-slider__link button" href="form.html">Заказать</a>
       </div>
       </section>
