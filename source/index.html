@@ -67,18 +67,20 @@
       <h1 class="visually-hidden">Отличный кофе без кофеина уже сварен.</h1>
       <section class="hero-slider section ">
         <div class="slider-pagination">
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop-2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet-2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile-2x.webp 2x" width="280" height="270">
+            <source media="(min-width: 1440px)" srcset="img/promo-desktop.png 1x, img/promo-desktop-2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/promo-tablet.png 1x, img/promo-tablet-2x.png 2x" width="709" height="609"> -->
+          <img class="hero-slider__image" src="images/slider-1-mobile.png" width="280" height="270" srcset="images/slider-1-2x-mobile.png 2x" alt="Кофе номер 1.">
+          <img class="hero-slider__image" src="images/slider-2-mobile.png" width="280" height="270" srcset="images/slider-2-2x-mobile.png 2x" alt="Кофе номер 2.">
+          <img class="hero-slider__image" src="images/slider-3-mobile.png" width="280" height="270" srcset="images/slider-3-2x-mobile.png 2x" alt="Кофе номер 3.">
+          </picture>
+          <span class="hero-slider__bage bage">Новинка!</span>
         <h2 class="hero-slider__title">Декаф Флэт Уайт</h2>
         <p class="hero-slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-        <picture>
-          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop-2x.webp 2x" width="552" height="499">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet-2x.webp 2x" width="709" height="609">
-          <source type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile-2x.webp 2x" width="280" height="270">
-          <source media="(min-width: 1440px)" srcset="img/promo-desktop.png 1x, img/promo-desktop-2x.png 2x" width="552" height="499">
-          <source media="(min-width: 768px)" srcset="img/promo-tablet.png 1x, img/promo-tablet-2x.png 2x" width="709" height="609"> -->
-        <img class="hero-slider__image" src="images/slider-1-mobile.png" width="280" height="270" srcset="images/slider-1-2x-mobile.png 2x" alt="Кофе номер 1.">
-        <img class="hero-slider__image" src="images/slider-2-mobile.png" width="280" height="270" srcset="images/slider-2-2x-mobile.png 2x" alt="Кофе номер 2.">
-        <img class="hero-slider__image" src="images/slider-3-mobile.png" width="280" height="270" srcset="images/slider-3-2x-mobile.png 2x" alt="Кофе номер 3.">
-        </picture>
+
         <div class="hero-slider__container">
           <s class="hero-slider__old-price">295₽</s>
           <p class="hero-slider__price">225₽</p>
@@ -89,7 +91,7 @@
         <button class="hero-slider__button slider-button-next" aria-label="Посмотреть следующий слайд" type="button">&gt</button>
       </section>
       <section class="features section">
-        <p class="features__text">Преимущества</p>
+        <span class="features__bage bage">Преимущества</span>
         <h3 class="features__title">Главные причины выбрать Drink2Go</h3>
         <ul class="features__list">
           <li class="features__item">
@@ -116,32 +118,34 @@
           </li>
         </ul>
       </section>
-      <section class="catalog section">
-        <p class="section__description">Каталог</p>
+      <section class="catalog">
+        <div class="catalog__wrapper wrapper">
+        <span class="catalog__bage bage">Каталог</span>
         <h3 class="catalog__title">Каталог кофейных напитков</h3>
         <form class="catalog__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__group">
             <legend class="form__title">Цена</legend>
-            <div class="range">
-              <div class="range-wrapper-inputs">
-                <label class="catalog-filter-field">
-                  <input class="range-input range-from" type="number" value="0" name="min-price">
-                </label>
-                <label class="catalog-filter-field">
-                  <input class="range-input range-to" type="number" value="900" name="max-price">
-                </label>
-              </div>
-
-              <div class="range-scale">
-                <div class="range-bar" style="left: 0; width: 226px">
-                  <button class="range-toggle toggle-min" type="button">
+            <div class="form__range range">
+              <div class="range__scale">
+                <div class="range__bar" style="left: 0; width: 226px">
+                  <button class="range__toggle range__toggle--min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="range-toggle toggle-max" type="button">
+                  <button class="range__toggle range__toggle--min" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
               </div>
+              <div class="range__wrapper">
+                <label class="range__name">
+                  <input class="range__input range__input--from" type="number" value="0" name="min-price">
+                </label>
+                <span class="range__dash">-</span>
+                <label class="renge__name">
+                  <input class="range__input range__input--to" type="number" value="900" name="max-price">
+                </label>
+              </div>
+
             </div>
           </fieldset>
           <fieldset class="form__group">
@@ -209,16 +213,19 @@
             </ul>
           </fieldset>
           <div class="form__button-wrapper">
-            <button class="form__button button button--submit" type="submit">Применить</button>
-            <button class="form__button button button--reset" type="reset">Сбросить</button>
+            <button class="form__button button form__button--submit" type="submit">Применить</button>
+            <button class="form__button button form__button--reset" type="reset">Сбросить</button>
           </div>
         </form>
-        <select class="select-control" aria-label="Сортировка">
+        <div class="catalog__select-wrapper select">
+        <span class="select__name">Сортировка:</span>
+        <select class="select__list" aria-label="Сортировка">
           <option value="default">По умолчанию</option>
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
+      </div>
         <div class="catalog__list-wrapper">
           <ul class="catalog__list">
             <li class="catalog__item card">
@@ -309,6 +316,7 @@
             </li>
           </ul>
           <button class="pagination__button pagination__button--next button">Вперёд</button>
+        </div>
         </div>
       </section>
       <section class="map section">

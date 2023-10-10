@@ -5,7 +5,11 @@
 @import "global/visually-hidden";
 
 /* BLOCKS */
+@import "blocks/bage";
 @import "blocks/button";
+@import "blocks/catalog";
+@import "blocks/features";
+@import "blocks/form";
 @import "blocks/header";
 @import "blocks/footer";
 @import "blocks/hero-slider";
@@ -13,7 +17,10 @@
 @import "blocks/section";
 @import "blocks/main-nav";
 @import "blocks/user-list";
+@import "blocks/range";
+@import "blocks/select";
 @import "blocks/site-list";
 @import "blocks/slider-pagination";
+@import "blocks/wrapper";
 
 

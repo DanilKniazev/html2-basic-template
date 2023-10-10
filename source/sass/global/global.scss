@@ -20,3 +20,8 @@ a {
 .button {
   cursor: pointer;
 }
+// Только так получилось убрать браузерные стрелки у инпутов
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
