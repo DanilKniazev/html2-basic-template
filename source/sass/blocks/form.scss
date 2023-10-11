@@ -2,7 +2,11 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.form__item {
+  margin-bottom: 20px;
 }
 
 .form__title {
@@ -13,6 +17,7 @@
   font-weight: 600;
   line-height: 24px;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .form__button-wrapper {
@@ -28,4 +33,36 @@
     color: #7859CF;
     background-color: #ffffff;
   }
+}
+
+.form__value {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.form__input {
+  appearance: none;
+  margin: 0;
+}
+
+.form__control-radio {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 2px solid #BDBDBD;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.form__input--radio:checked + .form__control-radio {
+  border-color: #7859CF;
+  box-shadow: inset 0 0 0 2px #fff;
+  background-color: #7859CF;
 }

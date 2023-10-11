@@ -6,7 +6,11 @@
   align-items: center;
   min-width: 320px;
   width: 100%;
+  background-color: #F3EBE1;
+  padding-top: 20px;
+  padding-bottom: 60px;
   // overflow: hidden;
+
 }
 
 .hero-slider__title {
@@ -17,6 +21,7 @@
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 10px;
   width: 280px;
 }
 
@@ -28,25 +33,28 @@
 }
 
 .hero-slider__description {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #333333;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 20px;
   width: 280px;
 }
 
 .hero-slider__container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   padding-left: 25px;
   padding-right: 25px;
 }
 
 .hero-slider__old-price {
+  display: block;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 20px;
   line-height: 32px;
@@ -61,6 +69,7 @@
   line-height: 32px;
   font-weight: 600;
   color: #333333;
+  margin: 0;
 }
 
 .hero-slider__link {
@@ -72,9 +81,9 @@
   height: 100%;
   cursor: pointer;
   border: none;
-  background-color: transparent;
+  background-color: tomato;
   top: 0;
-  transform: translateX(-50%);
+
   width: 20px;
   font-size: 24px;
   color:#7859CF;
