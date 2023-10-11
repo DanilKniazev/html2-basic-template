@@ -1,4 +1,19 @@
 /* в этот файл добавляет скрипты*/
+// Находим кнопку открытия меню и само меню
+let navToggle = document.querySelector('.js-toggle-button');
+let navMain = document.querySelector('.main-nav');
+
+// Добавляем обработчик события на кнопку
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
+
 // Получаем элементы слайдера
 const slider = document.querySelector('.slider-pagination');
 const prevButton = document.querySelector('.slider-button-prev');
