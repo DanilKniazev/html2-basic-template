@@ -106,6 +106,10 @@
   &:focus {
     background: linear-gradient(to right, #ffffff, transparent)
   }
+
+  &:active {
+    background: linear-gradient(to right, rgba(120, 89, 207, 0.25), transparent)
+  }
 }
 
 .hero-slider__button::before {
