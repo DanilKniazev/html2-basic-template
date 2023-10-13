@@ -1,7 +1,9 @@
 .select__list {
+  position: relative;
   appearance: none;
   border: none;
   background-color: transparent;
+  width: 100%;
   color: #7859CF;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
@@ -9,8 +11,31 @@
   font-weight: 600;
   line-height: 24px;
   text-transform: lowercase;
-  padding: 4px 10px;
+  padding: 4px 30px 4px 10px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select__wrapper {
+  position: relative;
+}
+
+.select__icon {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 12px;
+  right: 10px;
+  transform: rotate(-90deg);
+  background-image: url("/images/icons/stack.svg#pagination");
+  color: #7859CF;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select__list:active + .select__icon {
+  transform: rotate(90deg);
 }
 
 .select__name {
@@ -20,4 +45,5 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+  margin-right: 8px;
 }
