@@ -54,9 +54,13 @@ updateSlider();
 
 //Range-slider
 const sliderElement = document.querySelector('.range__slider');
-const handleLower = sliderElement.querySelector('.noUi-handle-lower');
-const sliderFrom =document.querySelector('.range__input--from');
-const sliderTo =document.querySelector('.range__input--to');
+const inputFrom =document.querySelector('.range__input--from');
+const inputTo =document.querySelector('.range__input--to');
+const inputs = [inputFrom, inputTo];
+const submit = document.querySelector('.form__button--submit');
+
+inputFrom.value = 0;
+inputTo.value = 900;
 
 noUiSlider.create(sliderElement, {
   start: [0, 900],
@@ -67,7 +71,21 @@ noUiSlider.create(sliderElement, {
     max: 1000,
   },
 });
-
-handleLower.noUiSlider.on('update', () => {
-  sliderFrom.value = sliderElement.noUiSlider.get();
+// Привязываем положения слайдера к инпутам цены
+sliderElement.noUiSlider.on('update', (values, handle) => {
+  inputs[handle].value = Math.round(values[handle]);
 });
+// Привязываем значение инпутов к полодению слайдеров
+const setRangeSlider = (i, value) => {
+  let arr = [null, null];
+  arr[i] = value;
+
+  sliderElement.noUiSlider.set(arr);
+};
+
+inputs.forEach((el, index) => {
+  el.addEventListener('change', (e) => {
+    setRangeSlider(index, e.currentTarget.value);
+  });
+});
+
