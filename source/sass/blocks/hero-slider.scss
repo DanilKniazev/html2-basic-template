@@ -1,5 +1,5 @@
 .hero-slider {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,8 +9,31 @@
   background-color: #F3EBE1;
   padding-top: 20px;
   padding-bottom: 60px;
+  box-sizing: border-box;
   // overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 0;
+    height: 640px;
+    margin-bottom: 188px;
+  }
+
+}
+
+.hero-slider__wrap {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 640px;
+    }
 }
 
 .hero-slider__title {
@@ -23,6 +46,13 @@
   margin: 0 auto;
   margin-bottom: 10px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    width: 608px;
+    margin-bottom: 16px;
+  }
 }
 
 .hero-slider__image {
@@ -30,11 +60,25 @@
   height: 100%;
   object-fit: cover;
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 476px;
+    height: 476px;
+    margin: 0 auto;
+    top: 352px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .hero-slider__bage {
   margin-top: 10px;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
 }
 
 .hero-slider__description {
@@ -47,6 +91,12 @@
   margin: 0 auto;
   margin-bottom: 20px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+    width: 608px;
+  }
 }
 
 .hero-slider__container {
@@ -56,6 +106,12 @@
   justify-content: space-between;
   padding-left: 25px;
   padding-right: 25px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .hero-slider__old-price {
@@ -110,6 +166,10 @@
   &:active {
     background: linear-gradient(to right, rgba(120, 89, 207, 0.25), transparent)
   }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
 }
 
 .hero-slider__button::before {
@@ -123,6 +183,10 @@
   background-size: 11px 20px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    left: 34px;
+  }
 }
 
 

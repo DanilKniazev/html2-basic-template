@@ -1,14 +1,17 @@
 .page__body {
   min-height: 100%;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   font-family: "Monserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #ffffff;
-  min-width: 320px;
+  width: 100%;
+
+  // @media (min-width: $tablet-width) {
+  //   width: 768px;
+  // }
 }

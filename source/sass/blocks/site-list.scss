@@ -7,6 +7,10 @@
   width: 100%;
   text-align: center;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+  }
 }
 
 .site-list__item {
@@ -16,6 +20,14 @@
 
   &:first-child {
     border-top: 1px solid #F0EBFF;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 
@@ -30,4 +42,13 @@ line-height: 16px; /* 133.333% */
 letter-spacing: 0.24px;
 text-transform: uppercase;
 padding: 20px 70px;
+
+@media (min-width: $tablet-width) {
+  padding: 32px 20px;
+
+&--current {
+  color: rgba(120, 89, 207, 1);
+  border-bottom: 2px solid rgba(120, 89, 207, 1);
+}
+}
 }

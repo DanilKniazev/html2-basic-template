@@ -4,12 +4,13 @@
   display: flex;
   position: relative;
   min-height: 60px;
+  box-sizing: border-box;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 768px;
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-right: 20px;
+    min-height: 80px;
+  }
 
   // @media (min-width: $desktop-width) {
   //   width: 1440px;

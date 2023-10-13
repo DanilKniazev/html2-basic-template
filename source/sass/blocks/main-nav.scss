@@ -1,6 +1,8 @@
 .main-nav {
   position: relative;
   display: flex;
+  align-items: center;
+
 }
 
 .main-nav__toggle {
@@ -14,6 +16,11 @@
   margin: 0;
   border: none;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
 }
 
 .main-nav__user-list {
@@ -40,6 +47,10 @@
   &--basket {
     background-image: url("/images/icons/stack.svg#basket");
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -59,9 +70,10 @@
 .main-nav--closed .site-list {
   display: none;
 
-  // @media (min-width: @tablet-width) {
-  //   display: flex;
-  // }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: static;
+  }
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -88,8 +100,9 @@
   bottom: 0;
   transform: translateY(100%);
 
-  // @media (min-width: @tablet-width) {
-  //   position: static;
-  // }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: static;
+  }
 }
 
