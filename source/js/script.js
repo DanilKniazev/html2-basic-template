@@ -51,3 +51,23 @@ function updateSlider() {
 
 // Инициализация слайдера
 updateSlider();
+
+//Range-slider
+const sliderElement = document.querySelector('.range__slider');
+const handleLower = sliderElement.querySelector('.noUi-handle-lower');
+const sliderFrom =document.querySelector('.range__input--from');
+const sliderTo =document.querySelector('.range__input--to');
+
+noUiSlider.create(sliderElement, {
+  start: [0, 900],
+  connect: true,
+  step: 5,
+  range: {
+    min: 0,
+    max: 1000,
+  },
+});
+
+handleLower.noUiSlider.on('update', () => {
+  sliderFrom.value = sliderElement.noUiSlider.get();
+});

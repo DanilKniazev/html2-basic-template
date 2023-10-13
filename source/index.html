@@ -5,7 +5,7 @@
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+    <!-- <link rel="stylesheet" href="vendor/nouislider/nouislider.css"> -->
 </head>
 
   <body class="page__body">
@@ -116,23 +116,14 @@
           <fieldset class="form__group">
             <legend class="form__title">Цена</legend>
             <div class="form__range range">
-              <div class="range__scale">
-                <div class="range__bar" style="left: 0; width: 226px">
-                  <button class="range__toggle range__toggle--min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range__toggle range__toggle--min" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
-              </div>
+              <div class="range__slider" id="slider"></div>
               <div class="range__wrapper">
                 <label class="range__name">
-                  <input class="range__input range__input--from" type="number" value="0" name="min-price">
+                  <input class="range__input range__input--from" type="number" min="0" max="1000" value="0" name="min-price">
                 </label>
                 <span class="range__dash">-</span>
                 <label class="range__name">
-                  <input class="range__input range__input--to" type="number" value="900" name="max-price">
+                  <input class="range__input range__input--to" type="number" min="0" max="1000" value="900" name="max-price">
                 </label>
               </div>
 
