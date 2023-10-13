@@ -9,4 +9,20 @@
   height: 40px;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+
+  &--vk {
+    background-image: url("/images/icons/stack.svg#vk");
+  }
+
+  &--pinterest {
+      background-image: url("/images/icons/stack.svg#pinterest");
+      background-size: 22px 22px;
+  }
+
+  &--ok {
+    background-image: url("/images/icons/stack.svg#ok");
+  }
 }

@@ -75,7 +75,7 @@ noUiSlider.create(sliderElement, {
 sliderElement.noUiSlider.on('update', (values, handle) => {
   inputs[handle].value = Math.round(values[handle]);
 });
-// Привязываем значение инпутов к полодению слайдеров
+// Привязываем значение инпутов к положению слайдеров
 const setRangeSlider = (i, value) => {
   let arr = [null, null];
   arr[i] = value;
