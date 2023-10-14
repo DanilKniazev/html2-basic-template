@@ -2,6 +2,7 @@
   width: 320px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   min-height: 60px;
   box-sizing: border-box;
@@ -12,11 +13,11 @@
     min-height: 80px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 1440px;
-  //   padding-left: 110px;
-  //   padding-right: 110px;
-  // }
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .header__logo {
@@ -24,6 +25,25 @@
   justify-content: center;
   align-items: center;
   margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 0;
+    margin-right: 308px;
+
+    &::after {
+      position: absolute;
+      content: "Интернет-магазин кофейных напитков";
+      color: #333333;
+      font-family: "Monserrat", "Arial", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      right: -146px;
+      width: 126px;
+    }
+  }
 }
 
 

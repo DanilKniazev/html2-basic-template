@@ -15,7 +15,7 @@ navToggle.addEventListener('click', function () {
 });
 
 // Получаем элементы слайдера
-const slider = document.querySelector('.slider-pagination');
+const slider = document.querySelector('.hero-slider__info');
 const prevButton = document.querySelector('.slider-button-prev');
 const nextButton = document.querySelector('.slider-button-next');
 const slides = Array.from(slider.querySelectorAll('img'));

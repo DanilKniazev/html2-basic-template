@@ -11,6 +11,11 @@
   @media (min-width: $tablet-width) {
     margin-right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 20px;
+    margin-right: 108px;
+  }
 }
 
 .site-list__item {
@@ -28,6 +33,10 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 83px;
   }
 }
 

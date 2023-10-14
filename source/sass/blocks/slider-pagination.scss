@@ -1,12 +1,1 @@
-.slider-pagination {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.5s ease-in-out;
-  padding-top: 20px;
-  padding-bottom: 60px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
-  }
-}
