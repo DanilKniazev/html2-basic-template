@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .pagination__button {
@@ -9,10 +13,14 @@
   background-color: #ffffff;
   width: 40px;
   height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
   background-image: url("/images/icons/stack.svg#pagination");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   &--next {
     transform: scale(-1, 1);
@@ -22,6 +30,11 @@
 .pagination__list {
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .pagination__link {
@@ -46,5 +59,6 @@
     font-weight: 600;
     color: #333333;
     background-color: transparent;
+    cursor: default;
   }
 }

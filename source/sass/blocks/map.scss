@@ -3,8 +3,11 @@
 }
 
 .map__wrapper {
-  display: flex;
   margin: 0 auto;
   padding: 0;
-  justify-content: center;
+}
+
+.map__image {
+  display: block;
+  width: 100%;
 }

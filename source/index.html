@@ -341,21 +341,21 @@
           </ul>
         </div>
         <div class="catalog__pagination pagination">
-          <button class="pagination__button pagination__button--prev button">
+          <button class="pagination__button pagination__button--prev">
             <span class="visually-hidden">Назад</span>
           </button>
           <ul class="pagination__list">
             <li class="pagination__item">
-              <a class="pagination__link">1</a>
+              <a class="pagination__link" href="#">1</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--current" href="#">2</a>
+              <a class="pagination__link pagination__link--current">2</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="#">3</a>
             </li>
           </ul>
-          <button class="pagination__button pagination__button--next button">
+          <button class="pagination__button pagination__button--next">
             <span class="visually-hidden">Вперёд</span>
           </button>
         </div>
@@ -363,7 +363,14 @@
       </section>
       <section class="map">
         <div class="map__wrapper">
-        <img class="map__image" src="images/map.jpg" alt="Карта с геопозицией">
+          <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop.webp 1x, images/map-desktop-2x.webp 2x" width="1440" height="540">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet.webp 1x, images/map-tablet-2x.webp 2x" width="768" height="480">
+          <source type="image/webp" srcset="images/map-mobile.webp 1x, images/map-mobile-2x.webp 2x" width="320" height="420">
+          <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg 1x, images/map-desktop-2x.jpg 2x" width="1440" height="540">
+          <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet-2x.jpg 2x" width="768" height="480">
+        <img class="map__image" src="images/map-mobile.jpg" srcset="images/map-mobile-2x.jpg 2x" alt="Карта с геопозицией." width="320" height="420">
+      </picture>
       </div>
       </section>
     </main>
