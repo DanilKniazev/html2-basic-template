@@ -11,7 +11,7 @@
 .pagination__button {
   color:#7859CF;
   background-color: #ffffff;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   border: none;
   border-radius: 4px;
@@ -24,6 +24,15 @@
 
   &--next {
     transform: scale(-1, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+    padding: 8px 20px;
+
+    &--next {
+      transform: initial;
+    }
   }
 }
 
@@ -60,5 +69,20 @@
     color: #333333;
     background-color: transparent;
     cursor: default;
+  }
+}
+
+.pagination__button-span {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    color: #7859CF;
+    text-align: center;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
   }
 }

@@ -1,7 +1,12 @@
 .form__wrapper {
   @media(min-width: $tablet-width) {
       display: flex;
+      justify-content: space-between;
       gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -10,6 +15,11 @@
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
 }
 
 .form__item {
@@ -26,13 +36,14 @@
   padding: 0;
   margin-bottom: 20px;
 
-  // @media(min-width: $tablet-width) {
-  //   margin-bottom: 30px;
-  // }
 }
 
 .form__range {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__button-wrapper {
@@ -45,6 +56,12 @@
     flex-direction: row;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 
 .form__button {
@@ -53,6 +70,10 @@
   &--reset {
     color: #7859CF;
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
   }
 }
 
