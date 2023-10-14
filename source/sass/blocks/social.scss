@@ -1,6 +1,19 @@
+.social {
+  border-bottom: 1px solid #F0EBFF;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+
 .social__list {
   display: flex;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .social__link {
@@ -25,4 +38,8 @@
   &--ok {
     background-image: url("/images/icons/stack.svg#ok");
   }
+}
+
+.social__logo {
+  padding: 0;
 }

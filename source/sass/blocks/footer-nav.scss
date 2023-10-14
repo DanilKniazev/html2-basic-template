@@ -1,9 +1,23 @@
+.footer-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .footer-nav__wrapper {
   position: relative;
   padding: 20px;
   border-bottom: 1px solid #F0EBFF;
-  &:first-child {
-    border-top: 1px solid #F0EBFF;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    padding-top: 10px;
+    width: 222px;
   }
 }
 
