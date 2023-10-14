@@ -18,6 +18,10 @@
 
 .select__wrapper {
   position: relative;
+
+  @media(min-width: $tablet-width) {
+    width: 165px;
+  }
 }
 
 .select__icon {
@@ -46,4 +50,8 @@
   font-weight: 600;
   line-height: 24px;
   margin-right: 8px;
+
+  @media(min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 }

@@ -5,6 +5,14 @@
 .catalog__wrapper {
   padding-top: 50px;
   padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
+}
+
+.catalog__bage {
+  margin-bottom: 4px;
 }
 
 .catalog__title {
@@ -15,6 +23,19 @@ font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: 36px;
+margin: 0;
+margin-bottom: 20px;
+
+@media (min-width: $tablet-width) {
+  font-size: 42px;
+  line-height: 64px;
+}
+}
+
+.catalog__form {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .catalog__select-wrapper {
@@ -22,10 +43,29 @@ line-height: 36px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+
+  @media(min-width: $tablet-width) {
+    justify-content: end;
+    margin-bottom: 26px;
+  }
 }
 
 .catalog__list {
   margin-bottom: 40px;
+
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 349px 349px;
+    gap: 30px;
+  }
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 

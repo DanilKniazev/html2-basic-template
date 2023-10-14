@@ -5,7 +5,11 @@
   padding-top: 40px;
   background-color: #ffffff;
   border-radius: 4px;
-  margin-bottom: 20px;
+
+  @media(min-width: $tablet-width) {
+    padding: 30px;
+    padding-top: 50px;
+  }
 }
 
 .card__picture {

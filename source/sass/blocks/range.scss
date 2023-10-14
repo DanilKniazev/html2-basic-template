@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media(min-width: $tablet-width) {
+    width: 223px;
+  }
 }
 
 .range__input {
@@ -18,10 +22,19 @@
   border-radius: 4px;
   border: 2px solid #9070EC;
   box-sizing: border-box;
+
+  @media(min-width: $tablet-width) {
+    width: 87px;
+  }
 }
 
 .range__slider {
   margin-bottom: 34px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 .range__dash {
