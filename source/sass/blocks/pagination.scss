@@ -26,7 +26,7 @@
     transform: scale(-1, 1);
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     background-image: none;
     padding: 8px 20px;
 
