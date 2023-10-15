@@ -8,7 +8,7 @@
 </head>
 
   <body class="page__body">
-    <header class="header">
+    <header class="header" data-test="header">
       <div class="header__wrapper">
       <a class="header__logo logo" href="">
         <picture>
@@ -54,36 +54,37 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">Отличный кофе без кофеина уже сварен.</h1>
-      <section class="hero-slider">
+      <section class="hero-slider" data-test="hero">
         <div class="hero-slider__wrap">
         <div class="hero-slider__info">
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/slider-1-desktop.webp 1x, images/slider/slider-1-desktop-2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/slider-1-desktop.webp 1x, images/slider/slider-1-desktop-2x.webp 2x" width="600" height="600">
             <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/slider-1-tablet.webp 1x, images/slider/slider-1-tablet-2x.webp 2x" width="476" height="476">
             <source type="image/webp" srcset="images/slider/slider-1-mobile.webp 1x, images/slider/slider-1-mobile-2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1440px)" srcset="images/slider/slider-1-desktop.png 1x, images/slider/slider-1-desktop-2x.png 2x" width="600" height="600">
             <source media="(min-width: 768px)" srcset="images/slider/slider-1-tablet.png 1x, images/slider/slider-1-tablet-2x.png 2x" width="476" height="476">
-
+          <img class="hero-slider__image" src="images/slider/slider-1-mobile.png" width="280" height="280" srcset="images/slider/slider-1-mobile-2x.png 2x" alt="Кофе номер 1.">
+          </picture>
+          <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/slider-2-desktop.webp 1x, images/slider/slider-2-desktop-2x.webp 2x" width="600" height="600">
             <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/slider-2-tablet.webp 1x, images/slider/slider-2-tablet-2x.webp 2x" width="476" height="476">
             <source type="image/webp" srcset="images/slider/slider-2-mobile.webp 1x, images/slider/slider-2-mobile-2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1440px)" srcset="images/slider/slider-2-desktop.png 1x, images/slider/slider-2-desktop-2x.png 2x" width="600" height="600">
             <source media="(min-width: 768px)" srcset="images/slider/slider-2-tablet.png 1x, images/slider/slider-2-tablet-2x.png 2x" width="476" height="476">
-
+          <img class="hero-slider__image" src="images/slider/slider-2-mobile.png" width="280" height="280" srcset="images/slider/slider-2-mobile-2x.png 2x" alt="Кофе номер 2.">
+          </picture>
+          <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/slider-3-desktop.webp 1x, images/slider/slider-3-desktop-2x.webp 2x" width="600" height="600">
             <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/slider-3-tablet.webp 1x, images/slider/slider-3-tablet-2x.webp 2x" width="476" height="476">
             <source type="image/webp" srcset="images/slider/slider-3-mobile.webp 1x, images/slider/slider-3-mobile-2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1440px)" srcset="images/slider/slider-3-desktop.png 1x, images/slider/slider-3-desktop-2x.png 2x" width="600" height="600">
-            <source media="(min-width: 768px)" srcset="images/slider/slider-3-tablet.png 1x, images/slider/slider-3-tablet-2x.png 2x" width="476" height="476"> -->
-
-          <img class="hero-slider__image" src="images/slider/slider-1-mobile.png" width="280" height="280" srcset="images/slider/slider-1-mobile-2x.png 2x" alt="Кофе номер 1.">
-          <img class="hero-slider__image" src="images/slider/slider-2-mobile.png" width="280" height="280" srcset="images/slider/slider-2-mobile-2x.png 2x" alt="Кофе номер 2.">
+            <source media="(min-width: 768px)" srcset="images/slider/slider-3-tablet.png 1x, images/slider/slider-3-tablet-2x.png 2x" width="476" height="476">
           <img class="hero-slider__image" src="images/slider/slider-3-mobile.png" width="280" height="280" srcset="images/slider/slider-3-mobile-2x.png 2x" alt="Кофе номер 3.">
           </picture>
           <div class="hero-slider__wrapper">
           <span class="hero-slider__bage bage">Новинка!</span>
         <h2 class="hero-slider__title">Декаф Флэт Уайт</h2>
-        <p class="hero-slider__description">Свежесваренный кофе без кофеина из Эфиопии с&nbspнатуральным фермерским молоком — то, что нужно для&nbspрасслабления после тяжёлого рабочего дня</p>
+        <p class="hero-slider__description">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
 
         <div class="hero-slider__container">
           <s class="hero-slider__old-price">295₽</s>
@@ -96,7 +97,7 @@
         <button class="hero-slider__button hero-slider__button--next slider-button-next" aria-label="Посмотреть следующий слайд" type="button"></button>
         </div>
       </section>
-      <section class="features">
+      <section class="features" data-test="features">
         <div class="features__wrapper wrapper">
         <span class="features__bage bage">Преимущества</span>
         <h3 class="features__title">Главные причины выбрать Drink2Go</h3>
@@ -109,24 +110,24 @@
           <li class="features__item">
             <span class="features__image features__image--comfort"></span>
             <h4 class="features__description-title">Удобство</h4>
-            <p class="features__description">Легко помещается и&nbspв&nbspкарман,
-              и&nbspв&nbspмаленькую сумочку</p>
+            <p class="features__description">Легко помещается и&nbsp;в&nbsp;карман,
+              и&nbsp;в&nbsp;маленькую сумочку</p>
           </li>
           <li class="features__item">
             <span class="features__image features__image--energy"></span>
             <h4 class="features__description-title">Бодрость</h4>
-            <p class="features__description">Сбалансированная доза кофеина даст&nbspмощный заряд энергии</p>
+            <p class="features__description">Сбалансированная доза кофеина даст&nbsp;мощный заряд энергии</p>
           </li>
           <li class="features__item">
             <span class="features__image features__image--eco"></span>
             <h4 class="features__description-title">Экологичность</h4>
             <p class="features__description">Вся упаковка сделана
-              из&nbspперерабатываемых материалов</p>
+              из&nbsp;перерабатываемых материалов</p>
           </li>
         </ul>
       </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <div class="catalog__wrapper wrapper">
         <span class="catalog__bage bage">Каталог</span>
         <h3 class="catalog__title">Каталог кофейных напитков</h3>
@@ -256,7 +257,7 @@
               </a>
               <a class="card__title">Декаф Флэт Уайт</a>
               <p class="card__description">Кофе без кофеина из Эфиопии
-                с&nbspнатуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
                 <div class="card__wrapper">
               <span class="card__price">225₽</span>
               <button class="button card__order">В корзину</button>
@@ -271,7 +272,7 @@
               </a>
               <a class="card__title">Декаф Флэт Уайт</a>
               <p class="card__description">Кофе без кофеина из Эфиопии
-                с&nbspнатуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
                 <div class="card__wrapper">
               <span class="card__price">225₽</span>
               <button class="button card__order">В корзину</button>
@@ -286,7 +287,7 @@
               </a>
               <a class="card__title">Декаф Флэт Уайт</a>
               <p class="card__description">Кофе без кофеина из Эфиопии
-                с&nbspнатуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
                 <div class="card__wrapper">
               <span class="card__price">225₽</span>
               <button class="button card__order">В корзину</button>
@@ -301,7 +302,7 @@
               </a>
               <a class="card__title">Декаф Флэт Уайт</a>
               <p class="card__description">Кофе без кофеина из Эфиопии
-                с&nbspнатуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
                 <div class="card__wrapper">
               <span class="card__price">225₽</span>
               <button class="button card__order">В корзину</button>
@@ -317,7 +318,7 @@
               </a>
               <a class="card__title">Декаф Флэт Уайт</a>
               <p class="card__description">Кофе без кофеина из Эфиопии
-                с&nbspнатуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
                 <div class="card__wrapper">
               <span class="card__price">225₽</span>
               <button class="button card__order">В корзину</button>
@@ -332,7 +333,7 @@
               </a>
               <a class="card__title">Декаф Флэт Уайт</a>
               <p class="card__description">Кофе без кофеина из Эфиопии
-                с&nbspнатуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
                 <div class="card__wrapper">
               <span class="card__price">225₽</span>
               <button class="button card__order">В корзину</button>
@@ -363,7 +364,8 @@
         </div>
       </section>
 
-      <section class="map">
+      <section class="map" data-test="map">
+        <h6 class="visually-hidden">Карта</h6>
         <div class="map__wrapper">
           <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop.webp 1x, images/map-desktop-2x.webp 2x" width="1440" height="540">
@@ -377,7 +379,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="footer__wrapper">
       <div class="footer__social social">
         <a class="social__logo logo">
@@ -443,7 +445,7 @@
                 <a class="footer-nav__contacts footer-nav__contacts--adress">Санкт-Петербург, набережная реки Карповки, дом 5</a>
               </li>
               <li class="footer-nav__item">
-                <a class="footer-nav__contacts footer-nav__contacts--tel" href="+7 (999) 999-99-99">+7 (999) 999-99-99</a>
+                <a class="footer-nav__contacts footer-nav__contacts--tel" href="+7(999)999-99-99">+7 (999) 999-99-99</a>
               </li>
             </ul>
         </div>

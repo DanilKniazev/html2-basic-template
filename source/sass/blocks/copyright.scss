@@ -9,6 +9,15 @@
   font-weight: 400;
   line-height: 16px;
   gap: 4px;
+
+  &:hover,
+  &:focus {
+    color: #7859CF;
+  }
+
+  &:active {
+    background-color: #593CAC;
+  }
 }
 
 .copyright__text {
@@ -21,8 +30,19 @@
   height: 16px;
   align-items: center;
   justify-content: center;
-  background-image: url("/images/icons/stack.svg#copyright");
-  background-repeat: no-repeat;
-  background-size: 12px 16px;
-  background-position: center;
+  mask-image: url("/images/icons/stack.svg#copyright");
+  mask-repeat: no-repeat;
+  mask-size: 12px 16px;
+  mask-position: center;
+  background-color: #BDBDBD;
 }
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  background-color: #7859CF;
+}
+
+.copyright__link:active .copyright__icon {
+  background-color: #593CAC;
+}
+

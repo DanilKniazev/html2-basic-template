@@ -10,3 +10,15 @@
   font-weight: 400;
   border: none;
 }
+.button:hover,
+.button:focus {
+    background-color: #9070EC;
+  }
+
+.button:active {
+  background-color: #593CAC;
+}
+
+.button:disabled {
+  background-color: #BDBDBD;
+}
