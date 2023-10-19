@@ -9,7 +9,7 @@
 }
 
 .pagination__button {
-  color:#7859CF;
+  color: #7859CF;
   background-color: #ffffff;
   min-width: 40px;
   height: 40px;
@@ -66,7 +66,7 @@
   height: 40px;
   align-items: center;
   justify-content: center;
-  color:#7859CF;
+  color: #7859CF;
   text-align: center;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
@@ -101,7 +101,7 @@
     &:hover,
     &:focus {
       color: #333333;
-    background-color: transparent;
+      background-color: transparent;
     }
   }
 }
@@ -118,5 +118,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-}
+  }
 }

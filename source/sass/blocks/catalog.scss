@@ -26,29 +26,29 @@
 
 .catalog__title {
   color: #333333;
-text-align: center;
-font-family: "Montserrat", "Arial", sans-serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px;
-margin: 0;
-margin-bottom: 20px;
+  text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 20px;
 
-@media (min-width: $tablet-width) {
-  font-size: 42px;
-  line-height: 64px;
-}
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 
-@media (min-width: $desktop-width) {
-  grid-column: 1 / 5;
-}
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 5;
+  }
 }
 
 .catalog__container {
   @media (min-width: $desktop-width) {
-  display: flex;
-}
+    display: flex;
+  }
 }
 
 .catalog__form {
@@ -98,5 +98,3 @@ margin-bottom: 20px;
     margin-bottom: 0;
   }
 }
-
-

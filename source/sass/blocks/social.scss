@@ -41,8 +41,8 @@
   }
 
   &--pinterest {
-      mask-image: url("/images/icons/stack.svg#pinterest");
-      mask-size: 22px 22px;
+    mask-image: url("/images/icons/stack.svg#pinterest");
+    mask-size: 22px 22px;
   }
 
   &--ok {
@@ -58,6 +58,7 @@
 .social__item:focus {
   background-color: #F0EBFF;
 }
+
 .social__item:active {
   background-color: #7859CF40;
 }
@@ -89,5 +90,5 @@
       width: 318px;
 
     }
-}
+  }
 }

@@ -41,22 +41,23 @@
 
 .site-list__link {
   color: #333333;
-text-align: center;
-font-family: "Montserrat", "Arial", sans-serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px; /* 133.333% */
-letter-spacing: 0.24px;
-text-transform: uppercase;
-padding: 20px 70px;
+  text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  /* 133.333% */
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  padding: 20px 70px;
 
-@media (min-width: $tablet-width) {
-  padding: 32px 20px;
+  @media (min-width: $tablet-width) {
+    padding: 32px 20px;
 
-&--current {
-  color: rgba(120, 89, 207, 1);
-  border-bottom: 2px solid rgba(120, 89, 207, 1);
-}
-}
+    &--current {
+      color: rgba(120, 89, 207, 1);
+      border-bottom: 2px solid rgba(120, 89, 207, 1);
+    }
+  }
 }

@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     min-height: 640px;
-    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
@@ -199,7 +199,7 @@
   top: 0;
   width: 20px;
   font-size: 24px;
-  color:#7859CF;
+  color: #7859CF;
   padding: 0;
 
   &--prev {
@@ -241,5 +241,3 @@
     left: 34px;
   }
 }
-
-
